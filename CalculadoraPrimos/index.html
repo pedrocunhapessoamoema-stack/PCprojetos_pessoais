@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Calculadora de Primos</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<main class="app">
+			<section class="card">
+				<header class="header">
+					<div>   </div>
+				
+								<h1 class="title">
+  <img src="img/calculator.svg" alt="Calculadora" style="width:28px;height:28px;vertical-align:middle;margin-right:8px">
+  Calculadora de Primos
+</h1>
+						<p class="subtitle">Encontre números primos até um limite informado</p>
+					</div>
+				</header>
+
+				<div class="controls">
+					<div class="field">
+						<label class="label" for="limit">Limite máximo (N)</label>
+						<input id="limit" class="input" type="number" min="2" value="1000">
+					</div>
+
+					<div class="field">
+						<label class="label">Ação</label>
+						<button id="calc" class="btn-primary">Calcular</button>
+					</div>
+				</div>
+
+				<section class="results" id="resultsContainer">
+					<div class="empty">Clique em "Calcular" para ver os resultados</div>
+				</section>
+		
+			</section>
+
+			<aside class="card aside fade-in">
+				<h3 class="title" style="margin-bottom:6px">Resumo</h3>
+				<div id="summary" class="muted">Nenhum cálculo realizado ainda.</div>
+
+				<div style="margin-top:14px">
+					<h4 class="title" style="font-size:14px;margin-bottom:8px">Últimos primos</h4>
+					<div id="lastPrimes" class="muted">—</div>
+				</div>
+			</aside>
+		</main>
+
+	
+</html>
